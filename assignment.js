@@ -1,7 +1,25 @@
+
+
 // kilometerToMeter
+function kilometerToMeter (kilometer){
+    var meter = kilometer * 1000;
+    return meter;
+  }
+  var totalMeter = kilometerToMeter(3.6);
+  console.log(totalMeter);
+
 // budgetCalculator
+function budgetCalculator(watch, phone, laptop){
+    var watchPrice = watch * 50;
+    var phonePrice = phone * 100;
+    var laptopPrice = laptop * 500;
+    var totalBudget = watchPrice + phonePrice + laptopPrice;
+    return totalBudget;
+    }
+    var totalItems = budgetCalculator(7, 9, 5);
+    console.log(totalItems);
+
 // hotelCost
-// megaFriend
 function hotelCost(dayStay){
     var everydayCost = 0;
     if (dayStay <= 10){
@@ -24,7 +42,8 @@ function hotelCost(dayStay){
 }
 var result = hotelCost(21);
 console.log(result);
-// test 2
+
+// megaFriend
 function megaFriend(name){
     var long = name[0];
     for (let i = 0; i < name.length; i++) {
@@ -38,14 +57,10 @@ function megaFriend(name){
 var  friend = ['abulkalam', 'jamalUddinKhan','kader','salam','jamal'];
 var longword = megaFriend(friend);
 console.log(longword);
-// test 3
-function kilometerToMeter (kilometer){
-    var meter = kilometer * 1000;
-    return meter;
-  }
-//   total kilometer to meter
-  var totalMeter = kilometerToMeter(3.6);
-  console.log(totalMeter);
+
+
+
+
 
 
 
