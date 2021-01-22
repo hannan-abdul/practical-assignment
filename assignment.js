@@ -5,8 +5,7 @@ function kilometerToMeter (kilometer){
     var meter = kilometer * 1000;
     return meter;
   }
-  var totalMeter = kilometerToMeter(3.6);
-  console.log(totalMeter);
+var totalMeter = kilometerToMeter(3.6);
 
 // budgetCalculator
 function budgetCalculator(watch, phone, laptop){
@@ -17,7 +16,6 @@ function budgetCalculator(watch, phone, laptop){
     return totalBudget;
     }
     var totalItems = budgetCalculator(7, 9, 5);
-    console.log(totalItems);
 
 // hotelCost
 function hotelCost(dayStay){
@@ -41,22 +39,20 @@ function hotelCost(dayStay){
     return everydayCost;
 }
 var result = hotelCost(21);
-console.log(result);
 
 // megaFriend
 function megaFriend(name){
-    var long = name[0];
+    var longName = name[0];
     for (let i = 0; i < name.length; i++) {
         var element = name[i];
-        if(long.length < element.length){
-        long = element
+        if(longName.length < element.length){
+        longName = element
         }   
     }
-    return long;
+    return longName;
 }
-var  friend = ['abulkalam', 'jamalUddinKhan','kader','salam','jamal'];
+var  friend = ["Abul Kalam", "Jamal Uddin Khan","Kader","Salam","Jamal"];
 var longword = megaFriend(friend);
-console.log(longword);
 
 
 
